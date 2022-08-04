@@ -17,7 +17,7 @@ interface ReposType {
   name: string;
   language: string;
   description: string;
-  git_url: string;
+  clone_url: string;
   homepage: string;
 }
 
@@ -31,6 +31,7 @@ export const Project = (): JSX.Element => {
       );
       const json = await data.json();
       setRepositories(json);
+      console.log(json);
       return json;
     };
     fetchData();
@@ -69,10 +70,10 @@ export const Project = (): JSX.Element => {
           </ProjectStack>
 
           <Text type="body1" color="grey2">
-            {repository.description.substring(0, 129)}
+            {repository.description?.substring(0, 129)}
           </Text>
           <ProjectLinks>
-            <ProjectLink target="_blank" href={repository.git_url}>
+            <ProjectLink target="_blank" href={repository.clone_url}>
               <FaGithub /> Github Code
             </ProjectLink>
             {repository.homepage && (
