@@ -28,8 +28,6 @@ import {
 } from "./style";
 import { HandEffect } from "@/components/HandEffect";
 
-import { default as projectsImg } from "@/public/static/img/background/page-bg.svg";
-
 export const Home = (): JSX.Element => {
   return (
     <main id="home">
@@ -83,7 +81,6 @@ export const Home = (): JSX.Element => {
             </StackCards>
           </HeaderContent>
         </Container>
-        <img src={projectsImg} alt="Some of my projects" />
       </Header>
       <ProjectsArea id="projects">
         <Container>

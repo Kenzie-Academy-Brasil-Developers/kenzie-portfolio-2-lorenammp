@@ -3,7 +3,7 @@ import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 import { css } from "@stitches/react";
 
-import img from "@/public/static/img/background/pagebg.svg";
+import img from "@/public/static/img/background/header-bg-2.png";
 import dots from "@/public/static/img/background/dots.svg";
 
 export const Header = styled("header", {
