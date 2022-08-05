@@ -1,15 +1,16 @@
 import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
-import { css } from "@stitches/react"
+import { css } from "@stitches/react";
 
-import img from "@/public/static/img/background/header-bg.svg";
+// import img from "@/public/static/img/background/header-bg.svg";
+import myBg from "@/public/static/img/background/pagebg.svg";
 import dots from "@/public/static/img/background/dots.svg";
 
 export const Header = styled("header", {
   backgroundColor: "$grey1",
   padding: "12rem 0 8rem 0",
-  backgroundImage: `url(${img})`,
+  backgroundImage: `url(${myBg})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "right",
   backgroundAttachment: "fixed",

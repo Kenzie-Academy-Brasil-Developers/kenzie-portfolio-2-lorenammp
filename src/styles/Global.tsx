@@ -78,6 +78,47 @@ export const globalStyles = globalCss({
     scrollBehavior: "smooth",
   },
   a: { textDecoration: "none" },
+
+  /* CUSTOM SCROLLBAR */
+  "::-webkit-scrollbar": {
+    width: "14px",
+    background: "#121214",
+  },
+
+  "::-webkit-scrollbar-thumb": {
+    boxShadow: "inset 0 0 14px 14px #E9ECEF",
+    border: "solid 4px transparent",
+    borderRadius: "14px",
+  },
+
+  "::-webkit-scrollbar-button": {
+    display: "none",
+  },
+
+  "::-webkit-scrollbar-thumb:hover": {
+    boxShadow: "inset 0 0 14px 14px #623CEA",
+  },
+
+  "::-webkit-scrollbar-track": {
+    display: "none",
+  },
+  // "::-webkit-scrollbar-thumb": {
+  //     box-shadow: "inset 0 0 14px 14px red",
+  //     border: "solid 4px transparent",
+  //     border-radius: "14px",
+  // },
+
+  // "::-webkit-scrollbar-button": {
+  //     display: none;
+  // },
+  // /* Handle on hover */
+  // ::-webkit-scrollbar-thumb:hover {
+  //     box-shadow: inset 0 0 14px 14px var(--pink);
+  // }
+
+  // ::-webkit-scrollbar-track {
+  //     display: none;
+  // }
 });
 
 export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
@@ -117,7 +158,7 @@ export const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
       4: "3rem",
       5: "4rem",
       section: "10rem",
-      sectionMobile: "4rem"
+      sectionMobile: "4rem",
     },
     fonts: {
       titles: '"IBM Plex Sans", sans-serif;',

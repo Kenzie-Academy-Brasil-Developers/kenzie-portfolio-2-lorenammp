@@ -25,11 +25,17 @@ export const Button = styled("button", {
         background: "transparent",
         borderColor: "transparent",
         fontWeight: "500",
+        transition: ".5s",
+
+        "&:hover": {
+          backgroundColor: "$brand1",
+        },
       },
       primary: {
         background: "$brand1",
         borderColor: "$brand1",
         color: "$whiteFixed",
+        transition: ".3s",
         "&:hover": {
           backgroundColor: "$brand2",
           borderColor: "$brand2",
@@ -56,7 +62,7 @@ export const Button = styled("button", {
         minWidth: "2.75rem",
         minHeight: "2.75rem",
         ["& + a"]: {
-            marginLeft: "$2"
+          marginLeft: "$2",
         },
         ["&.instagram"]: {
           backgroundColor: "$socialInstagram",

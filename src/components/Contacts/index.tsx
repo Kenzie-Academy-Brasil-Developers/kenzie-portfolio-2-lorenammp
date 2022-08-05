@@ -28,15 +28,15 @@ export const Contacts = () => {
           <motion.div style={{ opacity: scrollYProgress }}>
             <ContactSectionText>
               <Text type="heading2" color="grey4">
-                Let's set up a conversation and{" "}
+                {/* Would you like to know more about me and the projects I've been
+                working on?{" "} */}
                 <Text as="span" type="heading2" color="brand1">
-                  develop our creativity
+                  Get in touch
                 </Text>{" "}
-                together?
+                and lets work together!
               </Text>
               <Text color="grey2" type="body1">
-                Advertise your brand organically within Dribbble’s design
-                inspiration feed.
+                Contact me through my e-mail, LinkedIn or Whatsapp.
               </Text>
             </ContactSectionText>
           </motion.div>
@@ -50,8 +50,8 @@ export const Contacts = () => {
                   My Whatsapp
                 </Text>
                 <Text color="grey2" type="body2">
-                  I'm available for a voice chat, let's about creativity
-                  together?
+                  Always available for a chat, hit me up and let's make web more
+                  awesome!
                 </Text>
                 <Text
                   as="a"
@@ -74,7 +74,8 @@ export const Contacts = () => {
                   My email
                 </Text>
                 <Text color="grey2" type="body2">
-                  Send me an email reporting feedbacks, suggestions and ideas
+                  E-mail me for job offers, suggestions, feedbacks and cool
+                  ideas
                 </Text>
                 <Text
                   as="a"
@@ -96,8 +97,8 @@ export const Contacts = () => {
                   My LinkedIn
                 </Text>
                 <Text color="grey2" type="body2">
-                  We can create more constant interactions as well as a sharing
-                  network
+                  Sharing is caring! Add me on linkedin and let's build a
+                  network.
                 </Text>
                 <Text
                   as="a"

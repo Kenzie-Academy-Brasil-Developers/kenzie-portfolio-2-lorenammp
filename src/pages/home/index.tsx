@@ -55,11 +55,11 @@ export const Home = (): JSX.Element => {
               <Text as="span" type="heading1" color="brand1">
                 developing
               </Text>{" "}
-              projects
+              awesome front-end projects
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              Here you'll find my latest web applications, all my contact info
+              and a little bit more about me
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
